@@ -7,7 +7,7 @@ h1 {
   width: 100%;
 }
 
-
+/*Device widths greater than 991px: display 3 doctors across*/
 @media only screen and (min-width: 992px){
 	.card-columns {
 		column-count: 3 !important;
@@ -21,6 +21,7 @@ h1 {
 
 }
 
+/*Device widths between 576px and 991px: display 2 doctors across*/
 @media only screen and (min-width: 576px) and (max-width: 991px) {
 	.card-columns {
 		column-count: 2 !important;
@@ -31,6 +32,8 @@ h1 {
 	}
 }
 
+
+/*Device widths less than 575px show stacked doctors*/
 @media only screen and (max-width: 574px) {
 	.card-columns {
 		column-count: 1 !important;

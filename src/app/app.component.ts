@@ -37,12 +37,10 @@ export class AppComponent implements OnInit {
           }
       }
     sortedArray.sort( (a,b) => {
-      a = parseInt(a.reviewCount);
-      b = parseInt(b.reviewCount);
-      return b - a;
+      return b.reviewCount - a.reviewCount;
     });
 
-    console.log(sortedArray);
+    //console.log(sortedArray);
 
     // Implement your code here
 
